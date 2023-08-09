@@ -1,12 +1,12 @@
 {
   "keyboard": "glove80",
-  "uuid": "",
-  "date": 1690791390,
+  "uuid": "86dc1feb-325a-48bc-bbbc-da07d0e22283",
+  "date": 1691570387,
   "creator": "",
-  "parent_uuid": "ee52614e-09db-4906-b641-25c6c8386609",
+  "parent_uuid": "fa5248db-fd60-4376-ac29-7fd30d5cd171",
   "firmware_api_version": "1",
-  "title": "LThumbless v2 - Based on Sunaku's Layout v17 (Engrammer)",
-  "notes": "My Glove80 keymap [1], featuring the Engrammer layout [2] with Miryoku layers & home row mods [3], as discussed on Discord [4].\n\n[1] https://sunaku.github.io/moergo-glove80-keyboard.html\n[2] https://sunaku.github.io/engrammer-keyboard-layout.html\n[3] https://sunaku.github.io/home-row-mods.html\n[4] https://discord.com/channels/877392805654306816/1111469812850380831\n\nChanges:\n- Cursor layer: Mirrored cut/copy/paste on left half for right-handed mouse usage. Thanks to @n0rvegan for this idea: https://discord.com/channels/877392805654306816/1111469812850380831/1135463552484900906.\n- Cursor layer: Moved search/replace to outside and put find prev/next in middle.\n- Cursor layer: Added shift modifier to make select/extend line macros go backwards.\n- Timing: Increased the `HOMEY_TAPPING_TERM` threshold by +20ms (from 260ms to 280ms) to be exactly the same as that of my \"mind reading\" QMK configuration.\n- Firmware: Upgraded from PR16 (pr16.zephyr-3-2) to PR19 (pr19.zephyr-3-2-20230730).",
+  "title": "LThumbless v5 - Based on Sunaku's Layout v17 (Engrammer)",
+  "notes": "My Glove80 keymap [1], featuring the Engrammer layout [2] with Miryoku layers & home row mods [3], as discussed on Discord [4].\n\n[1] https://sunaku.github.io/moergo-glove80-keyboard.html\n[2] https://sunaku.github.io/engrammer-keyboard-layout.html\n[3] https://sunaku.github.io/home-row-mods.html\n[4] https://discord.com/channels/877392805654306816/1111469812850380831\n\nChanges (LThumbless):\n- Mirrored Symbol layer.\n- Replaced left Home with Symbol layer and 1/!\n\nChanges (sunaku):\n- Cursor layer: Mirrored cut/copy/paste on left half for right-handed mouse usage. Thanks to @n0rvegan for this idea: https://discord.com/channels/877392805654306816/1111469812850380831/1135463552484900906.\n- Cursor layer: Moved search/replace to outside and put find prev/next in middle.\n- Cursor layer: Added shift modifier to make select/extend line macros go backwards.\n- Timing: Increased the `HOMEY_TAPPING_TERM` threshold by +20ms (from 260ms to 280ms) to be exactly the same as that of my \"mind reading\" QMK configuration.\n- Firmware: Upgraded from PR16 (pr16.zephyr-3-2) to PR19 (pr19.zephyr-3-2-20230730).",
   "tags": [
     "sunaku",
     "engrammer",
@@ -14,7 +14,10 @@
     "miryoku",
     "vim",
     "gaming",
-    "typing"
+    "typing",
+    "hmnd",
+    "thumbless",
+    "hypoplasia"
   ],
   "unlisted": false,
   "layer_names": [
@@ -613,10 +616,10 @@
         "params": []
       },
       {
-        "value": "&kp",
+        "value": "Custom",
         "params": [
           {
-            "value": "HOME",
+            "value": "&thumb 6 N1",
             "params": []
           }
         ]
@@ -3480,50 +3483,74 @@
     ],
     [
       {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
         "value": "&bootloader",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
         "params": []
       },
       {
         "value": "&kp",
         "params": [
           {
-            "value": "LBKT",
+            "value": "COMMA",
             "params": []
           }
         ]
@@ -3532,7 +3559,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "RBKT",
+            "value": "SEMI",
             "params": []
           }
         ]
@@ -3559,7 +3586,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "SEMI",
+            "value": "LBKT",
             "params": []
           }
         ]
@@ -3568,7 +3595,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "COMMA",
+            "value": "RBKT",
             "params": []
           }
         ]
@@ -3601,7 +3628,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "TILDE",
+            "value": "QMARK",
             "params": []
           }
         ]
@@ -3619,7 +3646,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DQT",
+            "value": "GRAVE",
             "params": []
           }
         ]
@@ -3628,7 +3655,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "GRAVE",
+            "value": "DQT",
             "params": []
           }
         ]
@@ -3646,85 +3673,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "QMARK",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "HASH",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "CARET",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "EQUAL",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "UNDER",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DLLR",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "STAR",
+            "value": "TILDE",
             "params": []
           }
         ]
@@ -3737,16 +3686,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "LSHFT",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "LCTRL",
+            "value": "LGUI",
             "params": []
           }
         ]
@@ -3764,7 +3704,16 @@
         "value": "&kp",
         "params": [
           {
-            "value": "LGUI",
+            "value": "LCTRL",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LSHFT",
             "params": []
           }
         ]
@@ -3772,78 +3721,6 @@
       {
         "value": "&none",
         "params": []
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "EXCL",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "LT",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "PIPE",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "MINUS",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "GT",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "FSLH",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "PRCNT",
-            "params": []
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "DOT",
-            "params": []
-          }
-        ]
       },
       {
         "value": "&kp",
@@ -3855,35 +3732,49 @@
         ]
       },
       {
-        "value": "&to",
+        "value": "&kp",
         "params": [
           {
-            "value": 0,
+            "value": "CARET",
             "params": []
           }
         ]
       },
       {
-        "value": "&to",
+        "value": "&kp",
         "params": [
           {
-            "value": 0,
+            "value": "UNDER",
             "params": []
           }
         ]
       },
       {
-        "value": "&to",
+        "value": "&kp",
         "params": [
           {
-            "value": 0,
+            "value": "EQUAL",
             "params": []
           }
         ]
       },
       {
-        "value": "&none",
-        "params": []
+        "value": "&kp",
+        "params": [
+          {
+            "value": "DLLR",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "HASH",
+            "params": []
+          }
+        ]
       },
       {
         "value": "&none",
@@ -3915,10 +3806,28 @@
         "params": []
       },
       {
-        "value": "&kp",
+        "value": "&to",
         "params": [
           {
-            "value": "COMMA",
+            "value": 0,
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&to",
+        "params": [
+          {
+            "value": 0,
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&to",
+        "params": [
+          {
+            "value": 0,
             "params": []
           }
         ]
@@ -3927,7 +3836,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "AMPS",
+            "value": "STAR",
             "params": []
           }
         ]
@@ -3936,7 +3845,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "PLUS",
+            "value": "DOT",
             "params": []
           }
         ]
@@ -3945,7 +3854,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "SEMI",
+            "value": "PRCNT",
             "params": []
           }
         ]
@@ -3954,7 +3863,103 @@
         "value": "&kp",
         "params": [
           {
-            "value": "BSLH",
+            "value": "FSLH",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LT",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "MINUS",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "PIPE",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "GT",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "EXCL",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&reset",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&none",
+        "params": []
+      },
+      {
+        "value": "&to",
+        "params": [
+          {
+            "value": 0,
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&to",
+        "params": [
+          {
+            "value": 0,
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "AT",
             "params": []
           }
         ]
@@ -3972,51 +3977,49 @@
         "value": "&kp",
         "params": [
           {
-            "value": "AT",
+            "value": "BSLH",
             "params": []
           }
         ]
       },
       {
-        "value": "&to",
+        "value": "&kp",
         "params": [
           {
-            "value": 0,
+            "value": "COMMA",
             "params": []
           }
         ]
       },
       {
-        "value": "&to",
+        "value": "&kp",
         "params": [
           {
-            "value": 0,
+            "value": "PLUS",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "AMPS",
+            "params": []
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "SEMI",
             "params": []
           }
         ]
       },
       {
         "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&none",
-        "params": []
-      },
-      {
-        "value": "&reset",
         "params": []
       }
     ],
